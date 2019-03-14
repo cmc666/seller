@@ -3,9 +3,10 @@ spring:
     show-sql: true
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.113/seller?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://10.180.1.38/seller?characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
 
 server:
-  context-path: sell
+  context-path: /sell
+  port: 9080

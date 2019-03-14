@@ -1,9 +1,9 @@
 package com.yonyou.cmc.seller.form;
 
 import lombok.Data;
-import org.hibernate.validator.constraints.NotEmpty;
 
-import java.util.List;
+import javax.validation.constraints.NotEmpty;
+
 
 @Data
 public class OrderForm {
@@ -25,10 +25,9 @@ public class OrderForm {
 
     /** 微信openId. */
     @NotEmpty(message = "openid必填")
-    private String openId;
+    private String openid;
 
     /** 商品明细. */
-    @NotEmpty(message = "购物车不能为空")
     private String items;
 
 }

@@ -11,14 +11,14 @@ public class ResultVOUtil {
 
     /**
      * 返回正确的请求
-     * @param list
+     * @param object
      * @return
      */
-    public static ResultVO sucess(List list){
+    public static ResultVO sucess(Object object){
         ResultVO resultVO = new ResultVO();
         resultVO.setCode(0);
         resultVO.setMsg("查询成功");
-        resultVO.setData(list);
+        resultVO.setData(object);
         return resultVO;
     };
 
