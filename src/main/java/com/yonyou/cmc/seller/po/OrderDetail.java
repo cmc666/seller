@@ -4,6 +4,7 @@ package com.yonyou.cmc.seller.po;
 import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
 /**
@@ -14,6 +15,7 @@ import java.math.BigDecimal;
 public class OrderDetail {
 
     /** 订单明细id. */
+    @Id
     private String detailId;
 
     /** 订单id. */
